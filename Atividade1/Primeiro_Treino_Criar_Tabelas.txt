@@ -1,0 +1,29 @@
+CREATE TABLE escolas (
+id_escola INT,
+nome VARCHAR2(100),
+endereco VARCHAR2(100),
+telefone INT,
+tipo VARCHAR2(50),
+inauguracao DATE
+)
+
+
+create table Alunos(
+    id_aluno INT,
+    nome VARCHAR2(100),
+    data_nascimento DATE,
+    genero VARCHAR2(100),
+    cpf INT,
+    id_escola INT,
+    email VARCHAR2(50),
+    telefone INT
+)
+
+
+CREATE TABLE Cursos(
+    id_curso INT,
+    nome VARCHAR2(100),
+    carga_horaria INT,
+    id_escola INT,
+    nivel VARCHAR2(50)
+)

@@ -1,0 +1,44 @@
+//Fiz uma tabela de cada vez no APEX.
+//Aluno: Roberto Peres Coelho
+//RA: 5171526
+
+CREATE TABLE Tratamentos (
+    id_tratamento INT,
+    id_consulta INT,
+    descricao VARCHAR2(200),
+    medicamento VARCHAR2(100),
+    duracao_dias INT
+);
+
+CREATE TABLE Consultas (
+    id_consulta INT,
+    id_animal INT,
+    id_vet INT,
+    date_agendamento DATE,
+    motivo VARCHAR2(200)
+);
+
+CREATE TABLE Veterinarios (
+    id_vet INT,
+    nome VARCHAR2(100),
+    especialidade VARCHAR2(100),
+    telefone VARCHAR2(20),
+    email VARCHAR2(100)
+);
+
+CREATE TABLE Animais (
+    id_animal INT,
+    nome VARCHAR2(100),
+    especie VARCHAR2(50),
+    raca VARCHAR2(50),
+    idade INT,
+    id_cliente INT
+);
+
+CREATE TABLE Clientes (
+    id_cliente INT,
+    nome VARCHAR2(100),
+    telefone VARCHAR2(20),
+    email VARCHAR2(100),
+    endereco VARCHAR2(150)
+);
